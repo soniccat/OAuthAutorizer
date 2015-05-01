@@ -1,0 +1,3 @@
+[submodule "NSURL-Parameters"]
+	path = NSURL-Parameters
+	url = https://github.com/carlj/NSURL-Parameters.git

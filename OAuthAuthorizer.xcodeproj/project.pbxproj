@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6B86B201AF38E52005D06FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B86B1F1AF38E52005D06FE /* AppDelegate.swift */; };
+		D6B86B221AF38E52005D06FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B86B211AF38E52005D06FE /* Images.xcassets */; };
+		D6B86B251AF38E52005D06FE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B86B231AF38E52005D06FE /* MainMenu.xib */; };
+		D6B86B311AF38E52005D06FE /* OAuthAuthorizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B86B301AF38E52005D06FE /* OAuthAuthorizerTests.swift */; };
+		D6B86B3B1AF38F15005D06FE /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B86B3A1AF38F15005D06FE /* MainWindow.swift */; };
+		D6B86B3D1AF38FED005D06FE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B86B3C1AF38FED005D06FE /* WebKit.framework */; };
+		D6B86B411AF392F4005D06FE /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B86B401AF392F4005D06FE /* MainWindowController.swift */; };
+		D6B86B431AF39326005D06FE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B86B421AF39326005D06FE /* MainWindow.xib */; };
+		D6B86B4A1AF3A9D1005D06FE /* NSURL+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B86B491AF3A9D1005D06FE /* NSURL+Parameters.m */; };
+		D6B86B4C1AF3A9F6005D06FE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B86B4B1AF3A9F6005D06FE /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6B86B2B1AF38E52005D06FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B86B121AF38E52005D06FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B86B191AF38E52005D06FE;
+			remoteInfo = OAuthAuthorizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6B86B1A1AF38E52005D06FE /* OAuthAuthorizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAuthAuthorizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B86B1E1AF38E52005D06FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B86B1F1AF38E52005D06FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6B86B211AF38E52005D06FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6B86B241AF38E52005D06FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D6B86B2A1AF38E52005D06FE /* OAuthAuthorizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuthAuthorizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B86B2F1AF38E52005D06FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B86B301AF38E52005D06FE /* OAuthAuthorizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthAuthorizerTests.swift; sourceTree = "<group>"; };
+		D6B86B3A1AF38F15005D06FE /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		D6B86B3C1AF38FED005D06FE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D6B86B401AF392F4005D06FE /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		D6B86B421AF39326005D06FE /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		D6B86B481AF3A9D1005D06FE /* NSURL+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Parameters.h"; sourceTree = "<group>"; };
+		D6B86B491AF3A9D1005D06FE /* NSURL+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Parameters.m"; sourceTree = "<group>"; };
+		D6B86B4B1AF3A9F6005D06FE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D6B86B4D1AF3AA71005D06FE /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B86B171AF38E52005D06FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B86B4C1AF3A9F6005D06FE /* CFNetwork.framework in Frameworks */,
+				D6B86B3D1AF38FED005D06FE /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B86B271AF38E52005D06FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6B86B111AF38E52005D06FE = {
+			isa = PBXGroup;
+			children = (
+				D6B86B1C1AF38E52005D06FE /* OAuthAuthorizer */,
+				D6B86B2D1AF38E52005D06FE /* OAuthAuthorizerTests */,
+				D6B86B441AF3A982005D06FE /* Libs */,
+				D6B86B4E1AF3B388005D06FE /* Frameworks */,
+				D6B86B1B1AF38E52005D06FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6B86B1B1AF38E52005D06FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B86B1A1AF38E52005D06FE /* OAuthAuthorizer.app */,
+				D6B86B2A1AF38E52005D06FE /* OAuthAuthorizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6B86B1C1AF38E52005D06FE /* OAuthAuthorizer */ = {
+			isa = PBXGroup;
+			children = (
+				D6B86B1F1AF38E52005D06FE /* AppDelegate.swift */,
+				D6B86B3A1AF38F15005D06FE /* MainWindow.swift */,
+				D6B86B401AF392F4005D06FE /* MainWindowController.swift */,
+				D6B86B211AF38E52005D06FE /* Images.xcassets */,
+				D6B86B231AF38E52005D06FE /* MainMenu.xib */,
+				D6B86B421AF39326005D06FE /* MainWindow.xib */,
+				D6B86B1D1AF38E52005D06FE /* Supporting Files */,
+			);
+			path = OAuthAuthorizer;
+			sourceTree = "<group>";
+		};
+		D6B86B1D1AF38E52005D06FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B86B1E1AF38E52005D06FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6B86B2D1AF38E52005D06FE /* OAuthAuthorizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B86B301AF38E52005D06FE /* OAuthAuthorizerTests.swift */,
+				D6B86B2E1AF38E52005D06FE /* Supporting Files */,
+			);
+			path = OAuthAuthorizerTests;
+			sourceTree = "<group>";
+		};
+		D6B86B2E1AF38E52005D06FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B86B2F1AF38E52005D06FE /* Info.plist */,
+				D6B86B4D1AF3AA71005D06FE /* Bridge.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6B86B441AF3A982005D06FE /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				D6B86B471AF3A9D1005D06FE /* NSURL+Parameters */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		D6B86B471AF3A9D1005D06FE /* NSURL+Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				D6B86B481AF3A9D1005D06FE /* NSURL+Parameters.h */,
+				D6B86B491AF3A9D1005D06FE /* NSURL+Parameters.m */,
+			);
+			name = "NSURL+Parameters";
+			path = "NSURL-Parameters/NSURL+Parameters";
+			sourceTree = "<group>";
+		};
+		D6B86B4E1AF3B388005D06FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B86B3C1AF38FED005D06FE /* WebKit.framework */,
+				D6B86B4B1AF3A9F6005D06FE /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6B86B191AF38E52005D06FE /* OAuthAuthorizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B86B341AF38E52005D06FE /* Build configuration list for PBXNativeTarget "OAuthAuthorizer" */;
+			buildPhases = (
+				D6B86B161AF38E52005D06FE /* Sources */,
+				D6B86B171AF38E52005D06FE /* Frameworks */,
+				D6B86B181AF38E52005D06FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OAuthAuthorizer;
+			productName = OAuthAuthorizer;
+			productReference = D6B86B1A1AF38E52005D06FE /* OAuthAuthorizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6B86B291AF38E52005D06FE /* OAuthAuthorizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B86B371AF38E52005D06FE /* Build configuration list for PBXNativeTarget "OAuthAuthorizerTests" */;
+			buildPhases = (
+				D6B86B261AF38E52005D06FE /* Sources */,
+				D6B86B271AF38E52005D06FE /* Frameworks */,
+				D6B86B281AF38E52005D06FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B86B2C1AF38E52005D06FE /* PBXTargetDependency */,
+			);
+			name = OAuthAuthorizerTests;
+			productName = OAuthAuthorizerTests;
+			productReference = D6B86B2A1AF38E52005D06FE /* OAuthAuthorizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6B86B121AF38E52005D06FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Alexey Glushkov";
+				TargetAttributes = {
+					D6B86B191AF38E52005D06FE = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					D6B86B291AF38E52005D06FE = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = D6B86B191AF38E52005D06FE;
+					};
+				};
+			};
+			buildConfigurationList = D6B86B151AF38E52005D06FE /* Build configuration list for PBXProject "OAuthAuthorizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6B86B111AF38E52005D06FE;
+			productRefGroup = D6B86B1B1AF38E52005D06FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B86B191AF38E52005D06FE /* OAuthAuthorizer */,
+				D6B86B291AF38E52005D06FE /* OAuthAuthorizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6B86B181AF38E52005D06FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B86B221AF38E52005D06FE /* Images.xcassets in Resources */,
+				D6B86B251AF38E52005D06FE /* MainMenu.xib in Resources */,
+				D6B86B431AF39326005D06FE /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B86B281AF38E52005D06FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6B86B161AF38E52005D06FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B86B4A1AF3A9D1005D06FE /* NSURL+Parameters.m in Sources */,
+				D6B86B3B1AF38F15005D06FE /* MainWindow.swift in Sources */,
+				D6B86B201AF38E52005D06FE /* AppDelegate.swift in Sources */,
+				D6B86B411AF392F4005D06FE /* MainWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B86B261AF38E52005D06FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B86B311AF38E52005D06FE /* OAuthAuthorizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6B86B2C1AF38E52005D06FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B86B191AF38E52005D06FE /* OAuthAuthorizer */;
+			targetProxy = D6B86B2B1AF38E52005D06FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6B86B231AF38E52005D06FE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B86B241AF38E52005D06FE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6B86B321AF38E52005D06FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6B86B331AF38E52005D06FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D6B86B351AF38E52005D06FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OAuthAuthorizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
+			};
+			name = Debug;
+		};
+		D6B86B361AF38E52005D06FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OAuthAuthorizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
+			};
+			name = Release;
+		};
+		D6B86B381AF38E52005D06FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OAuthAuthorizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OAuthAuthorizer.app/Contents/MacOS/OAuthAuthorizer";
+			};
+			name = Debug;
+		};
+		D6B86B391AF38E52005D06FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OAuthAuthorizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OAuthAuthorizer.app/Contents/MacOS/OAuthAuthorizer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6B86B151AF38E52005D06FE /* Build configuration list for PBXProject "OAuthAuthorizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B86B321AF38E52005D06FE /* Debug */,
+				D6B86B331AF38E52005D06FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B86B341AF38E52005D06FE /* Build configuration list for PBXNativeTarget "OAuthAuthorizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B86B351AF38E52005D06FE /* Debug */,
+				D6B86B361AF38E52005D06FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D6B86B371AF38E52005D06FE /* Build configuration list for PBXNativeTarget "OAuthAuthorizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B86B381AF38E52005D06FE /* Debug */,
+				D6B86B391AF38E52005D06FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6B86B121AF38E52005D06FE /* Project object */;
+}

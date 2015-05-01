@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="OAuthAuthorizer" customModuleProvider="target">
+            <connections>
+                <outlet property="webView" destination="Ypa-y1-dYT" id="sbL-8K-YkC"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="fLG-6u-aOY"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="MainWindow" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="MainWindow" customModule="OAuthAuthorizer" customModuleProvider="target">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="Ypa-y1-dYT">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                        <connections>
+                            <outlet property="frameLoadDelegate" destination="-2" id="bfQ-Sc-Efn"/>
+                            <outlet property="policyDelegate" destination="-2" id="xZu-lv-6gs"/>
+                        </connections>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ypa-y1-dYT" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="DJ1-s0-p6A"/>
+                    <constraint firstAttribute="trailing" secondItem="Ypa-y1-dYT" secondAttribute="trailing" id="G6G-Y8-MMI"/>
+                    <constraint firstAttribute="bottom" secondItem="Ypa-y1-dYT" secondAttribute="bottom" id="HJA-Kf-qWa"/>
+                    <constraint firstItem="Ypa-y1-dYT" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="hxa-AP-v3a"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="gcG-VS-Kc6"/>
+            </connections>
+        </window>
+    </objects>
+</document>

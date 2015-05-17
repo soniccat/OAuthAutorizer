@@ -14,18 +14,24 @@ enum AuthError: Int {
     case RedirectUrlIsMissing = 2
 }
 
+//TODO:
+//add navigation
+//add error handling
+//add refresh button
+//add a chance to see requested url
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, MainWindowControllerDelegate {
 
-    var playgroundWindowController : MainWindowController! = nil;
+    var playgroundWindowController : MainWindowController! = nil
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
-        showPlaygroundWindow();
+        showPlaygroundWindow()
         
         var urlRef = commandArgument(1);
         if let url = urlRef {
-            requestAuth(url);
+            requestAuth(url)
         } else {
             print("An oauth url is expected as the first argument")
             closeApp()
@@ -38,11 +44,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, MainWindowControllerDelegate
 
     func showPlaygroundWindow() {
         if (playgroundWindowController == nil) {
-            playgroundWindowController = MainWindowController(windowNibName: "MainWindow");
+            playgroundWindowController = MainWindowController(windowNibName: "MainWindow")
             playgroundWindowController.delegate = self
         }
         
-        playgroundWindowController.showWindow(self);
+        playgroundWindowController.showWindow(self)
+        playgroundWindowController.window?.makeKeyAndOrderFront(playgroundWindowController)
     }
     
     func requestAuth(url:String) {
@@ -54,19 +61,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, MainWindowControllerDelegate
     }
     
     func commandArgument(index: uint) -> String? {
-        var result:String? = nil;
+        var result:String? = nil
         if (index < uint(Process.argc)) {
             result = String.fromCString(Process.unsafeArgv[Int(index)])
         }
         
-        return result;
+        return result
     }
     
     // MainWindowControllerDelegate
     
     func mainWindowController(controller:MainWindowController, authorizedWithString string:String) {
         print(string)
-        closeApp();
+        closeApp()
     }
     
     func mainWindowController(controller:MainWindowController, authorizeError error:NSError) {
@@ -79,7 +86,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MainWindowControllerDelegate
     }
     
     func closeApp() {
-        NSApplication.sharedApplication().terminate(self);
+        NSApplication.sharedApplication().terminate(self)
     }
 }
 

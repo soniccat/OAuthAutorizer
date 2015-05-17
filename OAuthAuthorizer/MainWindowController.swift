@@ -23,6 +23,10 @@ class MainWindowController: NSWindowController {
     
     @IBOutlet var webView: WebView!
     
+    override func windowWillLoad() {
+        super.windowWillLoad();
+    }
+    
     override func windowDidLoad() {
         super.windowDidLoad()
 
@@ -30,6 +34,20 @@ class MainWindowController: NSWindowController {
         assert(delegate != nil, "delegate check")
         
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        centerWindow(CGSizeMake(600, 600))
+        self.window?.disableSnapshotRestoration()
+        self.window?.level = kCGFloatingWindowLevelKey
+        
+    }
+    
+    func centerWindow(windowSize:CGSize) {
+        var screenRect = NSScreen.mainScreen()?.frame;
+        
+        var xPos = CGRectGetMidX(screenRect!) - windowSize.width/2.0;
+        var yPos = CGRectGetMidY(screenRect!) - windowSize.height/2.0;
+        var windowFrame = CGRectMake(xPos, yPos, windowSize.width, windowSize.height)
+        
+        self.window?.setFrame(windowFrame, display: true)
     }
     
     func windowWillClose(notification: NSNotification) {

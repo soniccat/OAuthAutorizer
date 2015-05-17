@@ -82,6 +82,12 @@
             ReferencedContainer = "container:OAuthAuthorizer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "https://quizlet.com/authorize?scope=read&amp;client_id=9zpZ2myVfS&amp;response_type=code&amp;state=124232&amp;redirect_uri=http://gaolife.blogspot.ru"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

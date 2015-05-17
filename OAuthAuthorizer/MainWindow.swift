@@ -9,5 +9,7 @@
 import Cocoa
 
 class MainWindow: NSWindow {
-    
+    override func setFrame(windowFrame: NSRect, display displayViews: Bool) {
+        super.setFrame(windowFrame, display: displayViews);
+    }
 }
